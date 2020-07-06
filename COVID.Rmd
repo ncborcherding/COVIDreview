@@ -26,7 +26,7 @@ data$Interventions <- tolower(data$Interventions)
 # Selection of Terms
 
 ```{r}
-drugs <- list(IL6 = "tocilizumab|il6|il-8", IL8 = "bms-986253|bms986253|il8|il-8", JAK = c("ruxolitinib|baricitinib|tofacitinib"), IFN = c("interferon|ifn|emapalumab"), VEGF = "bevacizumab|vegf", PD1 = c("nivolumab|pembrolizumab|pd-1|pd1"), CCR5 = "leronlimab|ccr5", BCRABL = "imatinib", Immunemodulators = c("thalidomide|lenalidomide"), BTK = "acalabrutinib|btk", TB = "bcg", NET = "selinexor", DNA = "etoposide|methotrexate", hormone = c("tamoxifen|isotretinoin|retinoin"))
+drugs <- list(IL6 = "tocilizumab|il6|il-6|siltuximab", IL8 = "bms-986253|bms986253|il8|il-8", JAK = c("ruxolitinib|baricitinib|tofacitinib"), IFN = c("interferon|ifn|emapalumab"), VEGF = "bevacizumab|vegf", PD1 = c("nivolumab|pembrolizumab|pd-1|pd1"), CCR5 = "leronlimab|ccr5", BCRABL = "imatinib", Immunemodulators = c("thalidomide|lenalidomide"), BTK = "acalabrutinib|btk|ibrutinib", TB = "bcg", NET = "selinexor", DNA = "etoposide|methotrexate", hormone = c("tamoxifen|isotretinoin|retinoin"))
 ```
 
 # Searching through the data
