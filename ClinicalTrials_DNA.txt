@@ -1,0 +1,3 @@
+""	"Rank"	"NCT.Number"	"Title"	"Status"	"Study.Results"	"Conditions"	"Interventions"	"Phases"	"Study.Type"	"Locations"	"URL"
+"152"	152	"NCT04356690"	"Etoposide in Patients With COVID-19 Infection"	"Recruiting"	"No Results Available"	"COVID-19"	"drug: etoposide"	"Phase 2"	"Interventional"	"Boston Medical Center, Boston, Massachusetts, United States"	"https://ClinicalTrials.gov/show/NCT04356690"
+"216"	216	"NCT04352465"	"Efficacy and Safety of MTX-loaded Nanoparticles to Treat Severe COVID-19 Patients"	"Not yet recruiting"	"No Results Available"	"COVID-19"	"drug: methotrexate"	"Phase 1|Phase 2"	"Interventional"	"Prevent Senior Private Operadora de Saúde LTDA., São Paulo, Brazil"	"https://ClinicalTrials.gov/show/NCT04352465"

@@ -1,0 +1,50 @@
+---
+title: Neoplastic-based COVID-19 Intervention
+author: 
+- name: Nick Borcherding
+  email: ncborch@gmail.com
+  affiliation: Washington University in St. Louis, School of Medicine, St. Louis, MO, USA
+date: "July 6, 2020"
+output:
+  BiocStyle::html_document:
+    toc_float: true
+
+---
+
+```{r, echo=FALSE, results="hide", message=FALSE}
+knitr::opts_chunk$set(error=FALSE, message=FALSE, warning=FALSE)
+library(BiocStyle)
+```
+
+# Loading and Processing the Data
+
+```{r}
+data <- read.delim("COVID_07062020.txt")
+data$Interventions <- tolower(data$Interventions)
+```
+
+# Selection of Terms
+
+```{r}
+drugs <- list(IL6 = "tocilizumab|il6|il-8", IL8 = "bms-986253|bms986253|il8|il-8", JAK = c("ruxolitinib|baricitinib|tofacitinib"), IFN = c("interferon|ifn|emapalumab"), VEGF = "bevacizumab|vegf", PD1 = c("nivolumab|pembrolizumab|pd-1|pd1"), CCR5 = "leronlimab|ccr5", BCRABL = "imatinib", Immunemodulators = c("thalidomide|lenalidomide"), BTK = "acalabrutinib|btk", TB = "bcg", NET = "selinexor", DNA = "etoposide|methotrexate", hormone = c("tamoxifen|isotretinoin|retinoin"))
+```
+
+# Searching through the data
+
+```{r}
+output <- list()
+for (i in seq_along(drugs)) {
+    tmp <- subset(data, grepl(drugs[[i]], data$Interventions))
+    output[[i]] <- tmp
+}
+names(output) <- names(drugs) #Naming the list the same as the categories in the "Drugs" list
+```
+
+# Writing the Data
+
+```{r}
+for (i in seq_along(output)) {
+    write.table(output[[i]], file = paste0("ClinicalTrials_", names(output[i]), ".txt"), col.names=NA, sep="\t",append=F)
+}
+```
+

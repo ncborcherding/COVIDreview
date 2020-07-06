@@ -1,0 +1,2 @@
+""	"Rank"	"NCT.Number"	"Title"	"Status"	"Study.Results"	"Conditions"	"Interventions"	"Phases"	"Study.Type"	"Locations"	"URL"
+"784"	784	"NCT04347226"	"Anti-Interleukin-8 (Anti-IL-8) for Patients With COVID-19"	"Recruiting"	"No Results Available"	"Solid Tumor|Sars-CoV2|Hematological Malignancy"	"drug: bms-986253"	"Phase 2"	"Interventional"	"Columbia University Irving Medical Center, New York, New York, United States"	"https://ClinicalTrials.gov/show/NCT04347226"
